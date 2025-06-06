@@ -173,6 +173,16 @@ React.useEffect(() => {
     console.log("*********ARRAY DE  IDS ES...")
       console.log(arrayrequest)
 //SEND THE POST
+let thelog = {
+        id: input.idname,
+        dificulty: input.dificulty,
+        duration: input.duration,
+        season: input.season,
+        namename: input.name,
+        countriestoadd: countriesbyprops
+      }
+      console.log("the mandaloriann is......************")
+      console.log(thelog)
     fetch ('https://countriesback-production-bffc.up.railway.app/countries/activities', {
       method: "POST",
       body: JSON.stringify({
