@@ -150,7 +150,7 @@ export function SET_PAGE (payload) {
 export function loadCountries (payload) {
   console.log('entro a Actions: loadCountries')
  return function (dispatch){
-  return fetch('http://countriesback-production-bffc.up.railway.app/countries')
+  return fetch('https://countriesback-production-bffc.up.railway.app/countries')
     .then(response => response.json())
       .then(json => {
         
@@ -196,7 +196,7 @@ export function SET_DETAIL (payload) {
   console.log(payload)
   
     return function (dispatch){
-      return fetch(`http://countriesback-production-bffc.up.railway.app/countries/${payload}`)
+      return fetch(`https://countriesback-production-bffc.up.railway.app/countries/${payload}`)
         .then(response => response.json())
           .then(json => {
             console.log("Detail del country es...")
@@ -212,7 +212,7 @@ export function SET_ARRAY_ON_CHANGE (payload) {
   console.log(payload)
   
     return function (dispatch){
-      return fetch(`http://countriesback-production-bffc.up.railway.app/countries?name=${payload}`)
+      return fetch(`https://countriesback-production-bffc.up.railway.app/countries?name=${payload}`)
         .then(response => response.json())
           .then(json => {
             console.log("countries parecidos de ACTIONS  son...")

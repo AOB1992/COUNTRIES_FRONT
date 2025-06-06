@@ -60,7 +60,7 @@ export default function Creation (props) {
     let reduxstate =  useSelector(state => state)
     let countriesredux =  useSelector(state => state.globalcountries)
     let countriesredux2
-    fetch('http://countriesback-production-bffc.up.railway.app/countries')
+    fetch('https://countriesback-production-bffc.up.railway.app/countries')
     .then(response => response.json())
       .then(json => {
         countriesredux2 = json.data
@@ -173,7 +173,7 @@ React.useEffect(() => {
     console.log("*********ARRAY DE  IDS ES...")
       console.log(arrayrequest)
 //SEND THE POST
-    fetch ('http://countriesback-production-bffc.up.railway.app/countries/activities', {
+    fetch ('https://countriesback-production-bffc.up.railway.app/countries/activities', {
       method: "POST",
       body: JSON.stringify({
         id: input.idname,
@@ -200,7 +200,7 @@ React.useEffect(() => {
    async function close () {
     dispatch(SET_SERVER_MESSAGE(''))
     let activityarray
-     await fetch('http://countriesback-production-bffc.up.railway.app/countries/activities')
+     await fetch('https://countriesback-production-bffc.up.railway.app/countries/activities')
     .then(response => response.json())
       .then(json => {
         console.log("bdispatich activitiesarray es")
