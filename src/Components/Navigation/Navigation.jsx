@@ -83,7 +83,7 @@ async function filterstart (event) {
     //activities to activity filter
      //attention global reach variable
     let activityobject = {}
-   await fetch('http://localhost:3001/countries/activities')
+   await fetch('countriesback-production-bffc.up.railway.app/countries/activities')
     .then(response => response.json())
       .then(json => {
         console.log("bringactivities es")
@@ -165,7 +165,7 @@ console.log(estadoglobal)
 //loadglobalcountriesx()
 function loadglobalcountriesx() {
     let resposta 
-    fetch('http://localhost:3001/countries')
+    fetch('countriesback-production-bffc.up.railway.app/countries')
     .then(response => response.json())
       .then(json => {
         console.log("countries de loadglobalcountriesx actions es")
@@ -181,7 +181,7 @@ function loadglobalcountriesx() {
 async function bringactivities() {//START BRING ACTIVITIES 
     let activityarray 
     let activityobject = {}
-   await fetch('http://localhost:3001/countries/activities')
+   await fetch('countriesback-production-bffc.up.railway.app/countries/activities')
     .then(response => response.json())
       .then(json => {
         console.log("bringactivities es")
@@ -271,7 +271,7 @@ let objectdispatch = {data: result}
 async function close () {
    // dispatch(SET_SERVER_MESSAGE(''))
     let activityarray
-     await fetch('http://localhost:3001/countries/activities')
+     await fetch('countriesback-production-bffc.up.railway.app/countries/activities')
     .then(response => response.json())
       .then(json => {
         console.log("bdispatich activitiesarray es")
