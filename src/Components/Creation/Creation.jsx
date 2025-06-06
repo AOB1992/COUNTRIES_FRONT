@@ -183,7 +183,7 @@ let thelog = {
       }
       console.log("the mandaloriann is......************")
       console.log(thelog)
-    fetch ('https://countriesback-production-bffc.up.railway.app/countries/activities', {
+    fetch ('https://countriesback-production-bffc.up.railway.app/activities', {
       method: "POST",
       body: JSON.stringify({
         id: input.idname,
