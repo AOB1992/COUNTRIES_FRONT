@@ -69,9 +69,19 @@ font-family:'Courier New', Courier, monospace;
     left: 650px; */
     font-size: medium;
     font-family:'Courier New', Courier, monospace;
+    
+transition-duration: 0.4s;
 }
 .button2:hover {
     background-color: white;
     color: rgb(83, 81, 81);
     font-family:'Courier New', Courier, monospace;
+    transform: translateY(-2px);
+}
+
+.button2:active {
+    transform: translateY(3px);
+    color: #d3a409ea;
+    background-color: black;
+    border: 0px;
 }

@@ -68,13 +68,19 @@ align-items: center;
     color:  #d3a409ea;
     text-align: center;
    
-   
+   transition-duration: 0.4s;
     font-size: medium;
 }
 .buttonhomed:hover {
     background-color: white;
     color: rgb(83, 81, 81);
+    transform: translateY(-2px);
 }
+.buttonhomed:active {
+   transform: translateY(3px);
+}
+
+
 .buttonsubmit {
     /* background: transparent; */
     border-radius: 8px;

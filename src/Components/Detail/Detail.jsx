@@ -109,6 +109,8 @@ export default function Detail (props) {
       
       <div className='activitiesdisplays'>
       {/* {datadetai}<h1>No activities found!</h1> */}
+      <div><h1>Countrie's activities</h1></div>
+      <p></p>
         {datadetail.activities?.map (x => {
         
             return (
@@ -120,6 +122,7 @@ export default function Detail (props) {
             </div>
             )
           }) }
+            
         </div>
       </div>
     );

@@ -29,8 +29,15 @@
     top: 450px;
     left: 650px; */
     font-size: medium;
+    transition-duration: 0.4s;
 }
 .pagebutton:hover {
     background-color: white;
     color: rgb(83, 81, 81);
+    transform: translateY(-2px);
+}
+.pagebutton:active {
+    background-color: black;
+    color: #d3a409ea;
+    transform: translateY(3px);
 }
