@@ -42,7 +42,7 @@ React.useEffect(() => {
   
 //RENDER
     return (
-      <div className="generallanding">
+      <div className="generallandingmain">
         <div className='divaob'>
         <h1 className='aobcountries'>  AOB COUNTRIES  </h1>
         </div>
